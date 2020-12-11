@@ -397,6 +397,118 @@ ol, ul, li{
     text-decoration: none;
     color: #555;
 }
+.categories-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 10%;
+    margin-top: 70px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-popular {
+    background:
+    linear-gradient(
+        337deg,
+        rgba(0, 0, 0, 0.9) 30%,
+        rgba(17, 8, 8, 0.6)
+        50%
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/cdrr-368x276.png) no-repeat center center/cover;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.mostpopular {
+    padding: 10px 5;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.popular-header {
+    padding: 0 10px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.popular-link {
+    font-size: 22px;
+    color: #fff;
+}
+
+.byline-text {
+    display: flex;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.byline-text a,
+.popular-title a {
+    text-decoration: none;
+    color: #fff; 
+    word-spacing: normal;   
+}
+
+.hf-link {
+    font-size: x-large;
+    font-weight: bold;
+    color: #f42;
+    text-decoration: none;
+    font-family: Avalon,sans-serif;
+}
+
+.cat-latest {
+    display: flex;
+    background: #fef9e7;
+    height: 90px;
+    justify-content: space-between;
+    color: #f42;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cat-latest img {
+    flex: 0 0 96px;
+    background-color: #000;
+    background-position: 50%;
+    background-size: cover;
+    height: 96px;
+    width: 96px;
+}
+
+.cat-latest-text {
+    padding: 10px;
+    line-height: 20px;
+}
+
+.cat-latest-text h4,
+.cat-latest-text h5 {
+    font-weight: bolder;
+    margin: 0;
+	padding: 0;
+}
+
+.cat-latest-list ul {
+    color: #555;
+}
+
+.cat-latest-list ul li::before {
+    content: "\2022";
+    color: #f42;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
 
 footer {
     display: flex;

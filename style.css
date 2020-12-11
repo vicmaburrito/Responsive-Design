@@ -677,7 +677,8 @@ line-height: 1;
     font-size: 12px;
 }
 
-.latest-news {
+.latest-news,
+.latest-deals {
     display: grid;
     grid-template-areas:
         'category-header . .'

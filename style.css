@@ -194,84 +194,209 @@ ol, ul, li{
 .author-time-share p {
     padding-right: 10px;
 }
+
 .latest-news,
 .latest-deals {
-  display: grid;
-  grid-template-areas:
-    'category-header . . .'
-    'card-1 card-2 card-3 card-4'
-    'card-5 card-6 card-7 card-8';
-  padding: 0 10%;
-  gap: 20px;
-  margin-top: 70px;
+    display: grid;
+    grid-template-areas:
+        'category-header . . .'
+            'card-1 card-2 card-3 card-4'
+            'card-5 card-6 card-7 card-8';
+    padding: 0 10%;
+    gap: 20px;
+    margin-top: 70px;
 }
 
 .latest-news img,
 .latest-deals img {
-  width: 100%;
-  margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .latest-news p,
 .latest-deals p {
-  color: #555;
-  padding-top: 10px;
-  font-family: sans-serif;
-  font-size: 14px;
+    color: #555;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
 }
 
 .latest-news h2,
 .latest-deals h2 {
-  color: #000;
-  font-size: 18px;
-  font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .category-header {
-  grid-area: category-header;
-  font-size: x-large;
-  font-weight: bolder;
-  text-decoration: none;
-  color: #f42;
+    grid-area: category-header;
+    font-size: x-large;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #f42;
 }
 
 .category-header img {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .card-1 {
-  grid-area: card-1;
+    grid-area: card-1;
 }
 
 .card-2 {
-  grid-area: card-2;
+    grid-area: card-2;
 }
 
 .card-3 {
-  grid-area: card-3;
+    grid-area: card-3;
 }
 
 .card-4 {
-  grid-area: card-4;
+    grid-area: card-4;
 }
 
 .card-5 {
-  grid-area: card-5;
+    grid-area: card-5;
 }
 
 .card-6 {
-  grid-area: card-6;
+    grid-area: card-6;
 }
 
 .card-7 {
-  grid-area: card-7;
+    grid-area: card-7;
 }
 
 .card-8 {
-  grid-area: card-8;
+    grid-area: card-8;
 }
 
+.funding-section {
+    padding: 0 10%;
+    color: #000;
+    margin: 70px 0;
+    position: relative;
+}
+
+.funding-header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.funding-header-section a {
+    text-decoration: none;
+    color: #f42;
+}
+
+.fund-header {
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Avalon,sans-serif;
+
+}
+
+.fa-chevron-right {
+    font-size: 16px;
+}
+
+.funding-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.fund-card {
+    justify-content: center;
+    width: 100%;
+}
+
+.card-logo img {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    margin-left: 1%;
+    margin-bottom: 40px;
+    margin-top: -30px;
+    z-index: 1;
+}
+
+.category-link {
+    display: flex;
+}
+
+.category-link li {
+    border-right: 1px solid #f42;
+    height: 15px;
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.cat-latest-list ul li {
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+}
+
+.category-link li:last-child {
+    border: none;
+    padding-left: 10px;
+}
+
+.company-name {
+    background: #f42;
+    color: #fff;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Avalon,sans-serif;
+}
+
+.fund-quote {
+    text-align: center;
+    line-height: 20px;
+    padding: 10px 0;
+    height: 60px;
+    background: rgba(255, 68, 34, 0.08);
+}
+.fund-quote h4{
+    font-size: 16px;
+    font-family: Avalon,sans-serif;
+    font-weight: bold;
+}
+.fund-quote p{
+    text-transform: uppercase;
+    color: #000;
+    opacity: .5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fund-tags {
+    color: #555;
+    height: 100px;
+    background: #fef9e7;
+    line-height: 25px;
+    padding: 25px 10px;
+    font-size: 16px;
+}
+
+.fund-summary {
+    font-size: 16px;
+    height: 85px;
+    background: #fef9e7;
+    padding: 15px 10px;
+    line-height: 25px;
+    border-top: 1px solid #f42;
+}
+
+.fund-summary a {
+    text-decoration: none;
+    color: #555;
+}
 
 footer {
     display: flex;
@@ -423,7 +548,6 @@ footer {
 .showcase-3 h3 {
 font-size: 30px;
 line-height: 1;
-
 }
 
 .showcase-2-content,
@@ -444,14 +568,39 @@ line-height: 1;
 .latest-news {
     display: grid;
     grid-template-areas:
-      'category-header . .'
-      'card-1 card-2 card-3'
-      'card-4 card-5 card-6'
-      'card-7 card-8 .';
+        'category-header . .'
+        'card-1 card-2 card-3'
+        'card-4 card-5 card-6'
+        'card-7 card-8 .';
     padding: 0 4%;
-  }
 }
 
+.funding-section {
+    padding: 0 4%;
+}
+
+.funding-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.category-link {
+    margin: 20px 0 10px 0;
+}
+
+.funding-cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fund-card:last-child {
+    display: none;
+}
+
+.categories-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 4%;
+}
+}
     @media screen and (max-width: 767px) {
 .top-nav,
 .bottom-nav {
@@ -531,21 +680,21 @@ line-height: 1;
 
 .latest-news,
 .latest-deals {
-  grid-template-areas:
-    'category-header'
-    'card-1'
-    'card-2'
-    'card-3'
-    'card-4'
-    'card-5'
-    'card-6'
-    'card-7'
-    'card-8';
-  padding: 0 4%;
+    grid-template-areas:
+        'category-header'
+        'card-1'
+        'card-2'
+        'card-3'
+        'card-4'
+        'card-5'
+        'card-6'
+        'card-7'
+        'card-8';
+    padding: 0 4%;
 }
 
 .latest-news {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 .card-1,
@@ -556,9 +705,9 @@ line-height: 1;
 .card-6,
 .card-7,
 .card-8 {
-  display: flex;
-  width: 100%;
-  gap: 20px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
 }
 
 .card-1 h2,
@@ -569,7 +718,7 @@ line-height: 1;
 .card-6 h2,
 .card-7 h2,
 .card-8 h2 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .card-1 img,
@@ -580,8 +729,29 @@ line-height: 1;
 .card-6 img,
 .card-7 img,
 .card-8 img {
-  width: 90px;
-  height: 80px;
+    width: 90px;
+    height: 80px;
+}
+
+.category-link {
+    flex-direction: column;
+}
+
+.category-link li {
+    border: none;
+    padding-bottom: 25px;
+}
+
+.funding-cards {
+    grid-template-columns: 1fr;
+}
+
+.funding-header-section {
+    padding: 0;
+}
+
+.categories-section {
+    grid-template-columns: 1fr;
 }
 
 .bottom-footer {

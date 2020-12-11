@@ -14,6 +14,7 @@ body {
     background: #f0f0f0;
     line-height: 1;
     margin: 0;
+    padding: 0;
 }
 
 ol, ul, li{
@@ -43,21 +44,21 @@ ol, ul, li{
     justify-content: space-between;
     padding: 3px 0;
     background: #131313;
+    line-height: 22px;
 }
 
 .top-nav a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-}
+    color: hsla(0,0%,100%,.6);}
 
 .top-nav li {
     padding: 0 10px;
 }
 
-.top-nav-left,
-.bottom-nav {
+.top-nav-left {
     display: flex;
     justify-content: space-between;
+    padding: 0%;
 }
 .top-nav-right{
 
@@ -69,14 +70,20 @@ ol, ul, li{
 }
 .bottom-nav {
     background: #fff;
-    height: 40px;
+    height: 45px;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
 }
 
 .bottom-nav a {
     text-decoration: none;
-    color: #808080;
-    padding: 0 10px;
+    color: #aaa;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: Shentox,sans-serif;
 }
 
 .bottom-nav-left {
@@ -95,46 +102,44 @@ ol, ul, li{
     opacity: .45;
 }
 
-.showcase {
-    display: flex;
-    gap: 10px;
-    height: 600px;
-    margin: 0;
-    background-color:blue ;
-}
-
 .showcase a {
     text-decoration: none;
     color: #fff;
 }
-
-.right-showcase {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 10px;
-    background-color:black;
+.showcase {
+        display: flex;
 }
 
 .showcase-1 {
+    display: flex;
+    gap: 10px;
+    margin: 0;
     width: 70%;
+    height: 100%;
     background:
-    linear-gradient(337deg, rgba(0, 0, 0, 0.9) 30%, rgba(17, 8, 8, 0.6) 50%),no-repeat center center/ cover;
+    linear-gradient(337deg, rgba(0, 0, 0, 0.9) 30%, rgba(17, 8, 8, 0.6) 50%),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/02/Facebook_Alert-796x398.png) no-repeat center center/ cover;
 }
 
 .showcase-2,
-.showcase-3,
-.section-popular {
-    height: 140px;
+.showcase-3{
+    margin: 11px;
+    width: 395px;
+    height: 240px;
 }
 
 .showcase-2 {
-    background-color: skyblue,
+    background-color: skyblue;
+    background:
+    linear-gradient(337deg, rgba(0, 0, 0, 0.9) 30%, rgba(17, 8, 8, 0.6) 50%),
+    url( https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/Screenshot-2020-12-11-at-12.57.56-796x498.png) no-repeat center center/ cover;
 }
 
 .showcase-3 {
-    margin: 0;
-    background-color: purple, no-repeat center center/ cover;
+    background-color: purple;
+    background:
+    linear-gradient(337deg, rgba(0, 0, 0, 0.9) 30%, rgba(17, 8, 8, 0.6) 50%),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/startup-plan-growth-gq-796x417.png) no-repeat center center/ cover;
 }
 
 .top-text {
@@ -142,13 +147,12 @@ ol, ul, li{
     justify-content: space-between;
 }
 
-
 .top-text img {
     width: 300px;
 }
 
 .showcase-1-content {
-    padding: 20px;
+    padding: 2px;
     color: #fff;
 }
 
@@ -157,19 +161,22 @@ ol, ul, li{
 }
 
 .showcase-1 h3 {
-    font-size: 70px;
-    width: 70%;
+    font-size: 55px;
+    width: 60%;
+    font-family: Avalon,sans-serif;
+    letter-spacing: -.015em;
 }
 
 .showcase-2-content,
 .showcase-3-content {
     padding: 10px;
     line-height: 35px;
+
 }
 
 .showcase-2 h5,
 .showcase-3 h5 {
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .showcase-2 h3,
@@ -192,7 +199,8 @@ ol, ul, li{
     display: grid;
     grid-template-areas:
     'category-header . . .'
-    'card-1 card-2 card-3 card-4''card-5';
+    'card-1 card-2 card-3 card-4'
+    'card-5 card-6 card-7 card-8';
     padding: 0 10%;
     gap: 20px;
     margin-top: 70px;
@@ -228,26 +236,48 @@ ol, ul, li{
     width: 20px;
     height: 20px;
 }
-
 .card-1 {
     grid-area: card-1;
-}
-
-.card-2 {
+  }
+  
+  .card-2 {
     grid-area: card-2;
-}
-
-.card-3 {
+  }
+  
+  .card-3 {
     grid-area: card-3;
-}
-
-.card-4 {
+  }
+  
+  .card-4 {
     grid-area: card-4;
-}
-
-.card-5 {
+  }
+  
+  .card-5 {
     grid-area: card-5;
-}
+  }
+  
+  .card-6 {
+    grid-area: card-6;
+  }
+  
+  .card-7 {
+    grid-area: card-7;
+  }
+  
+  .card-8 {
+    grid-area: card-8;
+  }
+  
+.funding-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .fund-card {
+    justify-content: center;
+    width: 100%;
+  }
 
 footer {
     display: flex;
@@ -294,9 +324,12 @@ footer {
     width: 300px;
     justify-content: space-between;
     font-size: 12px;
+}
+.footer-links a{
     color: #aaa;
     margin: 0;
-	padding: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 .bottom-footer {
@@ -323,7 +356,8 @@ footer {
 }
 
     @media screen and (max-width: 1023px) {
-    .top-text .showcase-logo {
+    .top-text
+    .showcase-logo {
     position: absolute;
     visibility: visible;
     background: black;
@@ -335,7 +369,17 @@ footer {
     box-sizing: border-box;
 }
 
-.top-nav,
+.bottom-nav a{
+    padding-left: 4px;
+}
+
+.top-nav{
+    line-height: 14px;
+    font-size: 13px;
+    padding-left: 100px;
+    
+
+}
 .bottom-nav-left {
     padding-left: 100px;
 }
@@ -345,16 +389,27 @@ footer {
 }
 
 .top-nav-right{
-    display:block;
+    display:flex;
+    padding: 0;
 }
 
-.showcase {
-    height: 100px;
+.top-nav-right a{
+    color: hsla(0,0%,100%,.6);
+}
+
+.top-nav-left{
+    padding: 0;
+}
+
+.showcase-1 {
+    height: 63vh;
 }
 
 .showcase-2,
 .showcase-3 {
-    height: 145px;
+    margin: 11px;
+    width: 260px;
+    height: 48%;
 }
 
 .showcase-1 h3 {
@@ -362,8 +417,9 @@ footer {
 }
 
 .showcase-1 h5 {
-    margin-top: 80px;
+    margin-top: 320px;
 }
+
 
 .bottom-text {
     line-height: 50px;
@@ -371,17 +427,20 @@ footer {
 
 .showcase-2 h3,
 .showcase-3 h3 {
-font-size: 20px;
+font-size: 30px;
+line-height: 1;
+
 }
 
 .showcase-2-content,
 .showcase-3-content {
     line-height: 25px;
+    
 }
 
 .showcase-2 h5,
 .showcase-3 h5 {
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 .author-time-share {
@@ -393,7 +452,8 @@ font-size: 20px;
     grid-template-areas:
         'category-header . .'
         'card-1 card-2 card-3'
-        'card-4 card-5';
+        'card-4 card-5 card-6'
+        'card-7 card-8 .';
     padding: 0 4%;
 }
 }
@@ -446,10 +506,12 @@ font-size: 20px;
     .showcase-3 {
     width: 100%;
     height: 200px;
+    margin: 0;
 }
 
 .right-showcase {
     width: 100%;
+    
 }
 
 .showcase-1 h3,
@@ -480,19 +542,25 @@ font-size: 20px;
         'card-2'
         'card-3'
         'card-4'
-        'card-5';
+        'card-5'
+        'card-6'
+        'card-7'
+        'card-8';
     padding: 0 4%;
 }
 
 .latest-news {
-    margin-top: 400px;
+    margin-top: 50px;
 }
 
 .card-1,
 .card-2,
 .card-3,
 .card-4,
-.card-5{
+.card-5,
+.card-6,
+.card-7,
+.card-8 {
     display: flex;
     width: 100%;
     gap: 20px;
@@ -502,7 +570,10 @@ font-size: 20px;
 .card-2 h2,
 .card-3 h2,
 .card-4 h2,
-.card-5 h2 {
+.card-5 h2,
+.card-6 h2,
+.card-7 h2,
+.card-8 h2 {
     font-weight: bold;
 }
 
@@ -510,7 +581,10 @@ font-size: 20px;
 .card-2 img,
 .card-3 img,
 .card-4 img,
-.card-5 img {
+.card-5 img,
+.card-6 img,
+.card-7 img,
+.card-8 img {
     width: 90px;
     height: 80px;
 }
@@ -528,6 +602,7 @@ font-size: 20px;
     background: #000;
     height: 100px;
     color: #555;
+    
 }
 
 .mobile-footer-img-1 {

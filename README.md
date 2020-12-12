@@ -1,4 +1,4 @@
-#Responsive-DHTML 2.0 - Project 2: Building with Responsive Designes
+##Responsive-DHTML 2.0 - Project 2: Building with Responsive Designes
 
 This is a clone of an article from The Next Web (https://thenextweb.com/). The code was not copied, instead, each characteristic was observed and re-developed with the knowledge acquired from the lessons taught by the program, I did the project alone, my partner left the program
 
